@@ -1,7 +1,11 @@
+import Category from "./components/categories/Categories";
+import HeroSection from "./components/HeroSection/HeroSection";
+
 function App() {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">Welcome to home</h1>
+      <HeroSection />
+      <Category />
     </div>
   );
 }

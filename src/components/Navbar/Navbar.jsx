@@ -36,7 +36,7 @@ const Navbar = () => {
             <div className="relative">
               <input
                 type="text"
-                className="w-full border border-gray-300 rounded py-2 px-4 pl-5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full border border-gray-300 rounded py-2 px-8 pl-5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 placeholder="What are you looking for?"
               />
               <div className="absolute inset-y-0 right-2 flex items-center pe-0 px-2 cursor-pointer text-[20px]">
