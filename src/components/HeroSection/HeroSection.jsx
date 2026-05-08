@@ -1,13 +1,14 @@
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { CategoryData, slides } from "../Categories/CategoryData";
-
+import "./hero.css";
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const HeroSection = () => {
   return (
@@ -49,23 +50,30 @@ const HeroSection = () => {
       </div>
 
       {/* RIGHT SIDE SLIDER */}
-      <div className="col-span-9 p-4 rounded-lg h-[500px]">
+      <div className="col-span-9 p-4 rounded-lg h-[300px]">
         <Swiper
           navigation={true}
+          pagination={{ clickable: true }}
           slidesPerView={1}
           loop={true}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
-          modules={[Navigation, Autoplay]}
+          modules={[Navigation, Pagination, Autoplay]}
+          className="mySwiper"
         >
           {slides?.map((item, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide className="relative" key={index}>
+              {/* IMAGE */}
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-[500px] object-cover rounded-lg"
+                className="w-full h-96 object-cover rounded-lg"
               />
 
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
+              {/* DARK OVERLAY */}
+              <div className="absolute inset-0 bg-black/40 rounded-lg"></div>
+
+              {/* TEXT */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10">
                 <p className="text-sm font-medium">{item.subtitle}</p>
                 <h2 className="text-4xl font-bold">{item.title}</h2>
                 <p className="text-sm mt-2">{item.description}</p>
