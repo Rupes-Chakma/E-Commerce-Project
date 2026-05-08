@@ -1,73 +1,57 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay, Navigation } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import { MdKeyboardArrowRight } from "react-icons/md";
+import { CategoryData } from "../Categories/CategoryData";
 
 const HeroSection = () => {
   return (
-    <div className="flex gap-4 p-4 bg-gray-100">
-      {/* LEFT SIDEBAR */}
-      <div className="w-1/4 bg-white p-4 rounded-lg shadow">
-        <ul className="space-y-3 text-gray-700">
-          <li className="hover:text-red-500 cursor-pointer">Woman’s Fashion</li>
-          <li className="hover:text-red-500 cursor-pointer">Men’s Fashion</li>
-          <li className="hover:text-red-500 cursor-pointer">Electronics</li>
-          <li className="hover:text-red-500 cursor-pointer">
-            Home & Lifestyle
-          </li>
-          <li className="hover:text-red-500 cursor-pointer">Medicine</li>
-          <li className="hover:text-red-500 cursor-pointer">
-            Sports & Outdoor
-          </li>
-          <li className="hover:text-red-500 cursor-pointer">Baby’s & Toys</li>
-          <li className="hover:text-red-500 cursor-pointer">
-            Groceries & Pets
-          </li>
-          <li className="hover:text-red-500 cursor-pointer">Health & Beauty</li>
+    <div className="container mx-auto grid lg:grid-cols-12 gap-4 py-8">
+      {/* LEFT CATEGORY SIDEBAR */}
+      <div className="col-span-3 bg-gray-100 p-4 rounded-lg">
+        <h4 className="text-xl font-bold mb-4 bg-red-500 text-white p-2 rounded">
+          Categories
+        </h4>
+
+        <ul className="space-y-2 text-gray-700">
+          {CategoryData.map((item, index) => (
+            <li
+              key={index}
+              className="relative group py-2 px-3 hover:bg-red-400 hover:text-white cursor-pointer flex items-center justify-between rounded"
+            >
+              {/* Title + Icon */}
+              <div className="flex items-center gap-2">
+                <span>{item.icon}</span>
+                <span>{item.title}</span>
+              </div>
+
+              {/* Arrow */}
+              {item.subcategories && <MdKeyboardArrowRight />}
+
+              {/* Subcategory Dropdown */}
+              {item.subcategories && (
+                <ul className="absolute left-full top-0 ml-1 w-52 bg-white shadow-lg rounded invisible group-hover:visible z-50 text-gray-700">
+                  {item.subcategories.map((sub, subIndex) => (
+                    <li
+                      key={subIndex}
+                      className="px-4 py-2 hover:bg-red-400 hover:text-white cursor-pointer"
+                    >
+                      {sub}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          ))}
         </ul>
       </div>
 
-      {/* RIGHT SLIDER */}
-      <div className="w-3/4">
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={20}
-          loop={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          pagination={{ clickable: true }}
-          navigation={true}
-          modules={[Pagination, Autoplay, Navigation]}
-          className="rounded-lg overflow-hidden"
-        >
-          <SwiperSlide>
-            <img
-              src="./images/baner.png"
-              alt="banner"
-              className="w-full h-[400px] object-cover"
-            />
-          </SwiperSlide>
+      {/* RIGHT SIDE (SLIDER PLACEHOLDER) */}
+       <div className="col-span-9 bg-gray-200 rounded-lg flex items-center justify-center">
+        <h2 className="text-2xl font-semibold text-gray-600">
+          Slider Coming Soon...
+        </h2>
+      </div> 
 
-          <SwiperSlide>
-            <img
-              src="./images/baner-1.png"
-              alt="banner"
-              className="w-full h-[400px] object-cover"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="./images/baner.png"
-              alt="banner"
-              className="w-full h-[400px] object-cover"
-            />
-          </SwiperSlide>
-        </Swiper>
-      </div>
+
     </div>
   );
 };

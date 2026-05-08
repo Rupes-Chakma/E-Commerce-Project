@@ -7,13 +7,14 @@ import App from "./App";
 import Error from "./components/Error/Error.jsx";
 import Categories from "./components/categories/Categories.jsx";
 import HeroSection from "./components/HeroSection/HeroSection.jsx";
+import Home from "./components/Home/Home.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="/home" element={<App />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/about" element={<HeroSection />} />
           <Route path="/contact" element={<Categories />} />
         </Route>
