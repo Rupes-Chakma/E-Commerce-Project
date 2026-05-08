@@ -12,7 +12,6 @@ import "swiper/css/navigation";
 const HeroSection = () => {
   return (
     <div className="container mx-auto grid lg:grid-cols-12 gap-4 py-8">
-      
       {/* LEFT CATEGORY SIDEBAR */}
       <div className="col-span-3 bg-gray-100 p-4 rounded-lg">
         <h4 className="text-xl font-bold mb-4 bg-red-500 text-white p-2 rounded">
@@ -50,10 +49,9 @@ const HeroSection = () => {
       </div>
 
       {/* RIGHT SIDE SLIDER */}
-      <div className="col-span-9 bg-gray-200 p-4 rounded-lg h-[450px]">
-        
+      <div className="col-span-9 p-4 rounded-lg h-[500px]">
         <Swiper
-        navigation={true}
+          navigation={true}
           slidesPerView={1}
           loop={true}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -64,14 +62,19 @@ const HeroSection = () => {
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-[450px] object-cover rounded-lg"
+                className="w-full h-[500px] object-cover rounded-lg"
               />
+
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
+                <p className="text-sm font-medium">{item.subtitle}</p>
+                <h2 className="text-4xl font-bold">{item.title}</h2>
+                <p className="text-sm mt-2">{item.description}</p>
+                <p className="text-lg font-semibold mt-4">{item.price}</p>
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
-
       </div>
-
     </div>
   );
 };
