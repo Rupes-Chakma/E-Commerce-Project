@@ -50,3 +50,30 @@ export const CategoryData = [
     subcategories: ["Skincare", "Makeup", "Fragrance"],
   },
 ];
+export const slides = [
+  {
+    subtitle: "CAPPELLINI",
+    title: "Wooden Lounge Chairs.",
+    description: "Timeless curves, handcrafted wood and museum-level comfort.",
+    price: "$999.00",
+    image:
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    subtitle: "MINIMAL LINE",
+    title: "Nordic Dining Set.",
+    description: "Bright oak tones designed for everyday family moments.",
+    price: "$799.00",
+    image:
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    subtitle: "URBAN STUDIO",
+    title: "Accent Sofa Collection.",
+    description: "Soft textures with clean silhouettes for modern interiors.",
+    price: "$649.00",
+    image:
+      "https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=1200&q=80",
+  },
+];
+
