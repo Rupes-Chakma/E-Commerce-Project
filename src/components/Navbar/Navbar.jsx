@@ -7,6 +7,8 @@ import { IoCartOutline } from "react-icons/io5";
 import { RiMenu4Line } from "react-icons/ri";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
+import { CategoryData } from "../Categories/CategoryData";
+import { GoChevronDown } from "react-icons/go";
 
 const Navbar = () => {
   let [isToggle, setIsToggle] = useState(false);
@@ -95,7 +97,37 @@ const Navbar = () => {
             </button>
           </div>
           {activeMenu == "menu" && <Menu />}
-          {activeMenu == "categories" && <h1>hello</h1>}
+          {activeMenu == "categories" && (
+            <ul className="space-y-2 text-gray-700">
+              {CategoryData.map((el, index) => {
+                return (
+                  <li
+                    key={index}
+                    className="py-2 px-3 hover:bg-red-400 hover:text-white cursor-pointer"
+                  >
+                    <Link className=" flex justify-between" to={el.title}>
+                      {el.title}
+                      <span>
+                        <GoChevronDown />
+                      </span>
+                    </Link>
+
+                    {el.subcategories && (
+                      <ul>
+                        {el.subcategories.map((sub, idx) => {
+                          return (
+                            <li key={idx} className="px-2 py-2cursor-pointer">
+                              <Link>{sub}</Link>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          )}
         </div>
         <span
           className="bg-red-600 hover:bg-black rounded flex items-center justify-center absolute top-3 p-1 text-[25px] right-5 text-white cursor-pointer"
