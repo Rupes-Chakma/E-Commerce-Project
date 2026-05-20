@@ -15,6 +15,8 @@ const Navbar = () => {
     setIsToggle(!isToggle);
   };
 
+  let [activeMenu, setActiveMenu] = useState("menu");
+
   return (
     <div className=" border-b-2 border-black/10 px-5 lg:px-0">
       <div className="grid grid-cols-5 mx-auto container lg:py-2 py-4  relative">
@@ -77,8 +79,23 @@ const Navbar = () => {
       <div
         className={`fixed top-0 left-0 w-full h-screen bg-black/50 z-50 transition-transform duration-300 ease-in-out ${isToggle ? "translate-x-0" : "-translate-x-full"}`}
       >
-        <div className="bg-white max-w-[80%] h-full p-5">
-          <Menu />
+        <div className="bg-white max-w-[80%] h-full p-5 ">
+          <div className="mb-5 flex gap-5">
+            <button
+              className={`cursor-pointer border border-black px-5 py-2 rounded-sm transition-colors duration-300   ${activeMenu == "menu" ? "bg-black text-white" : "hover:bg-black hover:text-white"}`}
+              onClick={() => setActiveMenu("menu")}
+            >
+              Menus
+            </button>
+            <button
+              className={`cursor-pointer border border-black px-5 py-2 rounded-sm transition-colors duration-300   ${activeMenu == "categories" ? "bg-black text-white" : "hover:bg-black hover:text-white"}`}
+              onClick={() => setActiveMenu("categories")}
+            >
+              Categories
+            </button>
+          </div>
+          {activeMenu == "menu" && <Menu />}
+          {activeMenu == "categories" && <h1>hello</h1>}
         </div>
         <span
           className="bg-red-600 hover:bg-black rounded flex items-center justify-center absolute top-3 p-1 text-[25px] right-5 text-white cursor-pointer"

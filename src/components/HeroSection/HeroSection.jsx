@@ -14,7 +14,7 @@ const HeroSection = () => {
   return (
     <div className="container mx-auto grid lg:grid-cols-12 gap-4 py-8">
       {/* LEFT CATEGORY SIDEBAR */}
-      <div className="col-span-3 bg-gray-100 p-4 rounded-lg">
+      <div className="col-span-3 bg-gray-100 p-4 rounded-lg hidden lg:block">
         <h4 className="text-xl font-bold mb-4 bg-red-500 text-white p-2 rounded">
           Categories
         </h4>
@@ -50,7 +50,7 @@ const HeroSection = () => {
       </div>
 
       {/* RIGHT SIDE SLIDER */}
-      <div className="col-span-9 p-4 rounded-lg h-[300px]">
+      <div className="col-span-9 p-4 rounded-lg h-[300px] hidden lg:block">
         <Swiper
           navigation={true}
           pagination={{ clickable: true }}

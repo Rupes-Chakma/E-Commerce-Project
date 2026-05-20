@@ -17,8 +17,8 @@ createRoot(document.getElementById("root")).render(
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<HeroSection />} />
           <Route path="/contact" element={<Categories />} />
+          <Route path="*" element={<Error />} />
         </Route>
-        <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
