@@ -13,12 +13,12 @@ export const CategoryData = [
   {
     title: "Men’s Fashion",
     icon: <FaMale />,
-    subcategories: ["Shirts", "Trousers", "Jackets"],
+    // subcategories: ["Shirts", "Trousers", "Jackets"],
   },
   {
     title: "Electronics",
     icon: <MdElectricBolt />,
-    subcategories: ["Mobiles", "Laptops", "Headphones"],
+    // subcategories: ["Mobiles", "Laptops", "Headphones"],
   },
   {
     title: "Home & Lifestyle",
@@ -32,7 +32,7 @@ export const CategoryData = [
   {
     title: "Sports",
     icon: <MdSportsEsports />,
-    subcategories: ["Football", "Basketball", "Tennis"],
+    // subcategories: ["Football", "Basketball", "Tennis"],
   },
   {
     title: "Toys",
@@ -42,7 +42,7 @@ export const CategoryData = [
   {
     title: "Pets",
     icon: <MdOutlinePets />,
-    subcategories: ["Dogs", "Cats", "Birds"],
+    // subcategories: ["Dogs", "Cats", "Birds"],
   },
   {
     title: "Health & Beauty",
