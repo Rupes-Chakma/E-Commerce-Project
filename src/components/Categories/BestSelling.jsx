@@ -138,9 +138,7 @@ const BestSelling = () => {
 
                 {/* Info */}
                 <div className="mt-4">
-                  <h3 className="font-medium text-gray-900">
-                    {product.name}
-                  </h3>
+                  <h3 className="font-medium text-gray-900">{product.name}</h3>
 
                   <div className="flex items-center gap-3 mt-1">
                     <span className="text-red-500 font-semibold">
@@ -156,13 +154,9 @@ const BestSelling = () => {
 
                   {/* Rating */}
                   <div className="flex items-center gap-1 mt-2">
-                    <div className="text-yellow-400 text-sm">
-                      ★★★★★
-                    </div>
+                    <div className="text-yellow-400 text-sm">★★★★★</div>
 
-                    <span className="text-gray-500 text-sm">
-                      (65)
-                    </span>
+                    <span className="text-gray-500 text-sm">(65)</span>
                   </div>
                 </div>
               </div>
