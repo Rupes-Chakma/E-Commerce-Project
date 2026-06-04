@@ -12,7 +12,7 @@
 }
 
 li .active {
-  @apply text-[#0B80DD];
+  @apply text-[#fb2c36];
   font-weight: 500;
 }
 .swiper-pagination-bullet {
@@ -24,7 +24,7 @@ li .active {
 }
 
 .swiper-pagination-bullet-active {
-  background: red;
+  background: #fb2c36;
   opacity: 1;
   transform: scale(1.2);
 }

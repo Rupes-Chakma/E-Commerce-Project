@@ -126,7 +126,7 @@ const ExploreProducts = () => {
           loop={true}
           modules={[Navigation, Autoplay]}
           autoplay={{
-            delay: 3000,
+            delay: 3500,
             disableOnInteraction: false,
           }}
           breakpoints={{
