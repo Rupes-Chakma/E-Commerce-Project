@@ -4,6 +4,8 @@ import Category from "../Categories/Categories";
 import BestSelling from "../Categories/Bestselling";
 import ExploreProducts from "../Categories/ExploreProducts";
 import FlashSales from "../Categories/FlashSales";
+import Hero from "../Categories/Hero";
+import FeaturedSection from "../Categories/FeaturedSection";
 
 const Home = () => {
   return (
@@ -12,7 +14,9 @@ const Home = () => {
       <FlashSales />
       <Category />
       <BestSelling />
+      <Hero />
       <ExploreProducts />
+      <FeaturedSection />
     </div>
   );
 };
