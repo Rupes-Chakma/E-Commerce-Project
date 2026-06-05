@@ -17,7 +17,7 @@ const ExploreProducts = () => {
       price: "$100",
       rating: 35,
       image:
-        "https://static-01.daraz.com.bd/p/fec2a0f0e6316a1a1a89f4c6f6a4a7d9.jpg",
+        "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ const ExploreProducts = () => {
       price: "$360",
       rating: 95,
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWq9jM2A5hA0SZX4y9Uo9kR7N0hVxkM2RzQw&s",
+        "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       button: true,
     },
     {
@@ -34,7 +34,7 @@ const ExploreProducts = () => {
       price: "$700",
       rating: 325,
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8q5mNQv9T7wQxv9lP6kFQ6iM7JqzF3dQkBw&s",
+        "https://images.unsplash.com/photo-1771015310937-6754da25e49a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: 4,
@@ -42,7 +42,7 @@ const ExploreProducts = () => {
       price: "$500",
       rating: 145,
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9o8Yx6m8h9Yx4M9W5aZz4h7wT1mJwGv7rjA&s",
+        "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: 5,
@@ -50,7 +50,7 @@ const ExploreProducts = () => {
       price: "$960",
       rating: 65,
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS79rz7PfUhUCjN9dDnlJ3X3AJbiZT-X9ENhA&s",
+        "https://images.unsplash.com/photo-1673343703903-57ac7d028444?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       colors: ["bg-red-500", "bg-red-300"],
       badge: "NEW",
     },
@@ -60,7 +60,7 @@ const ExploreProducts = () => {
       price: "$1160",
       rating: 35,
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKl0m8gQxV2sF2q3kKjM4hX9d4T2k7wK0BKw&s",
+        "https://images.unsplash.com/photo-1768696082282-df2812a4f7d8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       colors: ["bg-yellow-300", "bg-black"],
     },
     {
@@ -69,7 +69,7 @@ const ExploreProducts = () => {
       price: "$660",
       rating: 55,
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1Wk9M2R6vJ5wF8vW6mX8b2kW3rN7yQm1G3A&s",
+        "https://images.unsplash.com/photo-1592840496694-26d035b52b48?q=80&w=825&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       colors: ["bg-black", "bg-red-500"],
       badge: "NEW",
     },
@@ -79,7 +79,7 @@ const ExploreProducts = () => {
       price: "$660",
       rating: 55,
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMxY6zVjW8j7fH5xK6b9R4zM8kN7rT2jF9Ww&s",
+        "https://images.unsplash.com/photo-1727821031014-30e131f65122?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       colors: ["bg-teal-700", "bg-red-500"],
     },
   ];

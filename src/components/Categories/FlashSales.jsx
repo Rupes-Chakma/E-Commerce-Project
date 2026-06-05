@@ -44,7 +44,8 @@ const products = [
   {
     id: 4,
     title: "S-Series Comfort Chair",
-    image: "https://images.unsplash.com/photo-1505843490701-5be5d2bcb0b4?w=500",
+    image:
+      "https://images.unsplash.com/photo-1688578735352-9a6f2ac3b70a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 375,
     oldPrice: 400,
     discount: "-25%",
